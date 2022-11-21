@@ -1,8 +1,10 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; 
 }
 body{
-    background-color: #F4EEE5 !important;
+    background-color: #F4EEE5 !important; font-family: 'Poppins', sans-serif !important; font-size: 16px !important;  
 }
 
 nav{
@@ -17,22 +19,16 @@ nav{
     word-spacing: -1.7%;
 }
 
-@media screen and (min-width:900px) {
-    nav ul li {
-        align-items: center !important;
-        display: flex;
-    }
-}
-
 nav a{
     margin-right: 5px !important;
     font-size: 18px !important;
     text-decoration: none;
 }
 
-body{
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px !important;
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    padding: 10px 6px !important;
 }
 
 #kie h5 {
@@ -40,4 +36,37 @@ body{
 }
 #kie div > .F-letter::first-letter {
     font-size: x-large;
+}
+
+footer {
+    background-color: #E9D7B3 !important; 
+}
+
+footer h6{
+    font-weight: 700;
+    color: #222222fb;
+}
+
+footer .mon-thr{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly !important;
+}
+footer .fri-sun{
+    width: auto;
+    display: flex;
+}
+
+footer svg, footer img{
+    margin-right: 3px;
+    width: 12vh !important;
+    height: 6vh !important;
+}
+/*Layar Nav buat Tab*/
+@media screen and (min-width:900px) {
+    nav ul li {
+        align-items: center !important;
+        display: flex;
+    }
+
 }
