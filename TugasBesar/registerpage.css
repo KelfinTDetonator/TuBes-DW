@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #F4EEE5 !important;
+}
+
+nav{
+    background-color: #FFEDCE !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-family: 'Averia Serif Libre';
+    font-weight: 600;
+    font-size: 20px;
+    word-spacing: -1.7%;
+    
+}
+
+nav ul li{
+    display: flex;
+    align-items: center !important;
+    margin-right: 15px;
+}
+
+nav a{
+    margin-right: 5px !important;
+    font-size: 18px !important;
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    padding: 10px 3px !important;
+} 
+
+nav .icon-pp-cart{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav .pp > img {
+    display: block;
+    width: 30px;
+    justify-content: start;
+}
+
+nav .cart > img {
+    display: block;
+    width: 40px;
+}
+/*End Navbar*/
+
+.Register-page{
+    margin: 100px auto;
+    width: 400px;
+    padding: 10px;
+}
+
+.Register-page .container form h1{
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    font-size: 36px;
+}
+
+.Register-page .container form .mb-3{
+    font-family: 'Poppins Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.Register-page .container form .Button{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #E9D7B3 !important; 
+}
+
+footer h6{
+    font-size: medium;
+    font-weight: 700;
+    color: #222222fb;
+}
+
+footer .mon-thr{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+footer .fri-sun{
+    display: flex;
+}
+
+footer svg, footer img{
+    margin-right: 3px;
+    width: 13vh !important;
+    height: 6vh !important;
+}
+
+footer #brands{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #brands p{
+    margin-right: 20px;
+}
+
+@media screen and (min-width:900px) {
+    nav ul li {
+        align-items: center !important;
+        display: flex;
+    }
+}
+
+@media (max-width: 1056px){
+    nav div form input{
+        width: 38vh !important;
+        height: 4vh !important;
+    }
+}
