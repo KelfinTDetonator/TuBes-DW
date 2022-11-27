@@ -7,6 +7,7 @@ body{
     background-color: #F4EEE5 !important; font-family: 'Poppins', sans-serif !important; font-size: 16px !important;  
 }
 
+/*Navbar*/
 nav{
     background-color: #FFEDCE !important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -17,6 +18,13 @@ nav{
     font-weight: 600;
     font-size: 20px;
     word-spacing: -1.7%;
+    
+}
+
+nav ul li{
+    display: flex;
+    align-items: center !important;
+    margin-right: 15px;
 }
 
 nav a{
@@ -28,9 +36,29 @@ nav a{
 .navbar-toggler{
     border: none !important;
     outline: none !important;
-    padding: 10px 6px !important;
+    padding: 10px 3px !important;
+} 
+
+nav .icon-pp-cart{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
 }
 
+nav .pp > img {
+    display: block;
+    width: 30px;
+    justify-content: start;
+}
+
+nav .cart > img {
+    display: block;
+    width: 40px;
+}
+
+/*End Navbar*/
 #kie h5 {
     font-weight: bold !important;
 }
@@ -38,29 +66,38 @@ nav a{
     font-size: x-large;
 }
 
+/*FOOTER*/
 footer {
     background-color: #E9D7B3 !important; 
 }
 
 footer h6{
+    font-size: medium;
     font-weight: 700;
     color: #222222fb;
 }
 
 footer .mon-thr{
-    width: auto;
     display: flex;
     justify-content: space-evenly !important;
 }
 footer .fri-sun{
-    width: auto;
     display: flex;
 }
 
 footer svg, footer img{
     margin-right: 3px;
-    width: 12vh !important;
+    width: 13vh !important;
     height: 6vh !important;
+}
+
+footer #brands{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #brands p{
+    margin-right: 20px;
 }
 /*Layar Nav buat Tab*/
 @media screen and (min-width:900px) {
