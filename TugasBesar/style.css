@@ -68,7 +68,9 @@ nav .cart > img {
 
 #kie .U-karosel{
     font-weight: normal;
+    font-size: 17px;
 }
+
 #kie div > .F-letter::first-letter {
     font-size: x-large;
 }
@@ -102,8 +104,20 @@ nav .cart > img {
     padding: 0;
     align-items: center;
 }
-#kie .products  p{
+#kie .products p{
     font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    display: flex;
+    letter-spacing: -0.017em;;
+}
+
+#kie .products h5{
+    font-weight: medium;
+    font-size: 24px;
+    max-width: 100%;
+    display: flex;
 }
 #kie .nama-produk img{
     width: 20px;
@@ -118,6 +132,16 @@ nav .cart > img {
 #kie .produk{
     border-top: 1px solid black;
     padding-top: 30px;
+}
+#kie .produk p{
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    letter-spacing: -0.017em;
+    color: #000000;
 }
 #kie a{
     text-decoration: none;
@@ -161,8 +185,8 @@ footer .fri-sun{
 
 footer svg, footer img{
     margin-right: 3px;
-    width: 10vh !important;
-    height: 4vh !important;
+    width: 5.5vw !important;
+    height: 3vw !important;
 }
 
 footer #brands{
@@ -184,7 +208,16 @@ footer #brands p{
         width: 1px !important;
     }
 
-   
+    #kie .produk img{
+        max-height: 160px;
+        height: 100%;
+    }
+    #kie .boutUs p, .Deskripsi1 p, .Deskripsi2 p, .Deskripsi3 p{
+        font-size: 16px;
+    }
+    #kie .produk h5{
+        font-size: 22px;
+    }
     /*Footer*/
     footer h6{
         font-size: 13px !important;
@@ -196,34 +229,37 @@ footer #brands p{
     }
     footer svg, footer img{
         margin-right: 3px;
-        width: 8vh !important;
-        height: 5vh !important;
+        width: 8vw !important;
+        height: 5vw !important;
     }
 }
 
 @media screen and (max-width:768px){
 
-    #kie .products{ grid-template-columns: 1fr 3fr;} 
+    #kie .products{ grid-template-columns: 1fr 2fr;} 
     #kie .products .produk img{
-        width: 100%;
-        max-width: 160px;
-        height: 130px;
+        max-width: auto;
+        max-height: 140px;
+        height: 100%;
+    }
+    #kie .boutUs p, .Deskripsi1 p, .Deskripsi2 p, .Deskripsi3 p{
+        font-size: 14px !important;
+    }
+    #kie .verticalimg{
+        display: block;
+        width: 90px;
+        height: 150px;
     }
     #kie .products h5{
-        font-size: 2.5vw;
+        font-size: 18px !important;
     }
     #kie .products .produk p{
-        font-size: 1.8vw;
+        font-size: 14px !important;
     }
     }
 
 /*Screen untuk HP*/
 @media screen and (max-width:576px){
-
-    #kie{
-        margin: 20px !important;
-        font-size: 0.8em;
-    }
     #kie .products{
         display: grid;
         grid-template-columns: 2fr;
@@ -236,15 +272,24 @@ footer #brands p{
         'products3'; 
     }
     #kie .produk img{
-        max-width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 140px !important;
+        height: auto !important;
     }
-    #kie .produk a h5{
-        
-        font-size: 15px;
+    #kie .boutUs p, .Deskripsi1 p, .Deskripsi2 p, .Deskripsi3 p{
+        font-size: 13px !important;
     }
-    #kie .produk a p{
-        font-size: 12px;
+    #kie .products h5{
+        font-size: 17px !important;
+    }
+    #kie .produk h5{
+        justify-content: center; 
+    }
+    #kie .products .produk p{
+        line-height: normal;
+        letter-spacing: normal;
+        justify-content: center;
+        font-size: 12px!important;
     }
     /*.produk a{
         display: flex;
@@ -261,11 +306,16 @@ footer #brands p{
         display: flex;
         justify-content: start !important;
     }
-    footer .partnership{
+    footer .partnerShip{
         margin-top: 20px;
     }
     footer .contactUs{
-        margin-top: 20px;
+        margin-top: 20px !important;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: auto !important;
+        max-height: 25px !important;
     }
     footer h6{
         font-size: 13px !important;
@@ -275,5 +325,22 @@ footer #brands p{
     footer p{
         font-size: 11px !important;
 
+    }
+}
+
+@media screen and (max-width:400px){
+    #kie .products h5{
+        font-size: 15px !important;
+    }
+    #kie .products p{font-size: 14px !important;}
+    #kie .produk img{max-height: 145px !important;}
+    #kie .produk .container .row .col-lg-4:nth-child(1){
+        width: 50%;
+    }
+    #kie .produk .container .row .col-lg-4:nth-child(2){
+        width: 50%;
+    }
+    #kie .produk .container .row .col-lg-4:nth-child(3){
+        display: none;
     }
 }
