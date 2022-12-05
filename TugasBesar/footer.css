@@ -1,0 +1,90 @@
+/*FOOTER*/
+footer {
+    background-color: #E9D7B3 !important; 
+}
+
+footer h6{
+    font-size: 15px !important;
+    font-weight: 700;
+    color: #222222d7;
+}
+
+footer p{
+    color: #222222d7;
+    font-size: 13px;
+}
+
+footer .mon-thr{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+footer .fri-sun{
+    display: flex;
+}
+
+footer svg, footer img{
+    margin-right: 3px;
+    width: 5.5vw !important;
+    height: 3vw !important;
+}
+
+footer #brands{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #brands p{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:992px) {
+/*Footer*/
+    footer h6{
+        font-size: 13px !important;
+        font-weight: bold;
+        color: #222222d7;
+    }
+    .footer p{
+        font-size: small;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: 8vw !important;
+        height: 5vw !important;
+    }
+
+}
+@media screen and (max-width:576px){
+footer .mon-thr{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .mon-thr p, footer .mon-thr h6{
+        margin-right: 10px;
+    }
+    footer .fri-sun{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .partnerShip{
+        margin-top: 20px;
+    }
+    footer .contactUs{
+        margin-top: 20px !important;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: auto !important;
+        max-height: 25px !important;
+    }
+    footer h6{
+        font-size: 13px !important;
+        font-weight: 700;
+        color: #222222a9;
+    }
+    footer p{
+        font-size: 11px !important;
+
+    }
+}
+
