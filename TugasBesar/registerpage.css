@@ -39,6 +39,24 @@ nav a{
     padding: 10px 3px !important;
 } 
 
+.navbar .dropdown-toggle[aria-expanded='true']::after {
+    transform: rotate(-180deg);
+
+}
+
+.navbar .dropdown-toggle::after{
+    border: none;
+    content: '\f0d7';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+nav form{
+    margin-right: 65px;
+}
+
 nav .icon-pp-cart{
     display: flex;
     flex-direction: row;
@@ -50,13 +68,13 @@ nav .icon-pp-cart{
 nav .pp > img {
     display: block;
     width: 30px;
-    justify-content: start;
 }
 
 nav .cart > img {
     display: block;
     width: 40px;
 }
+
 /*End Navbar*/
 
 .Register-page{
@@ -89,9 +107,14 @@ footer {
 }
 
 footer h6{
-    font-size: medium;
+    font-size: 15px !important;
     font-weight: 700;
-    color: #222222fb;
+    color: #222222d7;
+}
+
+footer p{
+    color: #222222d7;
+    font-size: 13px;
 }
 
 footer .mon-thr{
@@ -104,8 +127,8 @@ footer .fri-sun{
 
 footer svg, footer img{
     margin-right: 3px;
-    width: 13vh !important;
-    height: 6vh !important;
+    width: 5.5vw !important;
+    height: 3vw !important;
 }
 
 footer #brands{
@@ -117,6 +140,57 @@ footer #brands p{
     margin-right: 20px;
 }
 
+@media screen and (max-width:992px) {
+/*Footer*/
+    footer h6{
+        font-size: 13px !important;
+        font-weight: bold;
+        color: #222222d7;
+    }
+    .footer p{
+        font-size: small;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: 8vw !important;
+        height: 5vw !important;
+    }
+
+}
+@media screen and (max-width:576px){
+footer .mon-thr{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .mon-thr p, footer .mon-thr h6{
+        margin-right: 10px;
+    }
+    footer .fri-sun{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .partnerShip{
+        margin-top: 20px;
+    }
+    footer .contactUs{
+        margin-top: 20px !important;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: auto !important;
+        max-height: 25px !important;
+    }
+    footer h6{
+        font-size: 13px !important;
+        font-weight: 700;
+        color: #222222a9;
+    }
+    footer p{
+        font-size: 11px !important;
+
+    }
+}
+
 @media screen and (min-width:900px) {
     nav ul li {
         align-items: center !important;
@@ -124,9 +198,9 @@ footer #brands p{
     }
 }
 
-@media (max-width: 1056px){
+@media (max-width: 990px){
     nav div form input{
-        width: 38vh !important;
+        width: 30vh !important;
         height: 4vh !important;
     }
 }
